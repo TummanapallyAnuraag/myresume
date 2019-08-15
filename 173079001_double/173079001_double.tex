@@ -1,7 +1,6 @@
 \documentclass[10pt]{article}
 
-%-------------------------------------------------------------------------
-%\usepackage{fullpage}
+% -- packages --
 \usepackage{multicol}
 \usepackage{amssymb}
 \usepackage[a4paper]{geometry}
@@ -9,250 +8,233 @@
 \usepackage{multirow}
 \usepackage{bm}
 \usepackage{array}
-\usepackage{amsmath,latexsym} 
+\usepackage{amsmath,latexsym}
 \usepackage{csquotes}
 \usepackage{verbatim}
 \usepackage{tipa}
 \usepackage{enumitem}
-
 \usepackage[pdftex]{graphicx}
-\pagestyle{empty}
-%\definecolor{bl}{RGB}{173,216,230} %ankit   123, same %pratik
-%\definecolor{bl}{rgb}{0.2, 0.9, 0.9} %light green
-%\definecolor{bl}{RGB}{133,220,230} % pratik ********
-%\definecolor{bl}{RGB}{173,210,240}  % new
-\definecolor{llb}{rgb}{0.25,0.25,0.25}
-
-
-\definecolor{bl}{RGB}{173,216,230}  %final
-%\definecolor{bl}{RGB}{166,226,235}  %pratik
-\definecolor{mygray}{gray}{0.44}
-
-
-\newcommand{\hilight}[1]{\colorbox{light-gray}{#1}}
-\geometry{left=0.65in, right=0.57in, top=0.70in, bottom=0.5in}
-
-%-------------------------------------------------------------------------
-%font san serif family
-%\upshape
-%\mdseries
-\fontfamily{pcr}  % ld
-%%\fontfamily{SansSerif}
-
-%-------------------------------------------------------------------------
-\setlength{\parindent}{-2mm}
-\newlist{myitemize}{itemize}{2}
-\setlist[myitemize,1]{label=$\bullet$,leftmargin=8mm,topsep=2mm,itemsep=1.1mm,itemindent=0mm,parsep=-0.5mm}
-\setlist[myitemize,2]{label=$-$,leftmargin=9mm,topsep=1mm,itemsep=1mm,itemindent=0mm,parsep=-1mm}
-\setitemize[0]{leftmargin=0.4cm, itemsep=0.1cm}
-\newcommand\hs{1.3mm}		%horizontal space
-\setlength{\tabcolsep}{5pt}
-
-%\let\oldhfill\hfill
-%\renewcommand{\hfill}[1]{\oldhfill{#1}\\[-0.6cm]}
-
 \usepackage{xparse}
-\NewDocumentCommand{\framecolorbox}{oommm}
- {% #1 = width (optional)
-  % #2 = inner alignment (optional)
-  % #3 = frame color
-  % #4 = background color
-  % #5 = text
-  \IfValueTF{#1}
-   {\IfValueTF{#2}
-    {\fcolorbox{#3}{#4}{\makebox[#1][#2]{#5}}}
-    {\fcolorbox{#3}{#4}{\makebox[#1]{#5}}}%
-   }
-   {\fcolorbox{#3}{#4}{#5}}%
- }
-%-------------------------------------------------------------------------
-%for horizontal lines
-\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+
+% -- formatting --
+\pagestyle{empty}
+\geometry{left=0.65in, right=0.57in, top=0.70in, bottom=0.5in}
+\renewcommand*\familydefault{\sfdefault}
+\setlength{\parindent}{-2mm}
+\setlength{\tabcolsep}{5pt}
+\setitemize[0]{leftmargin=0.4cm, itemsep=0.1cm}
+
+% -- new list definition -- # very useful!
+\newlist{myitemize}{itemize}{2}
+\setlist[myitemize,1]{label=$\bullet$,leftmargin=4mm,topsep=2mm,itemsep=2mm,itemindent=0mm,parsep=-0.5mm}
+\setlist[myitemize,2]{label=$\circ$,leftmargin=4mm,topsep=1mm,itemsep=1mm,itemindent=0mm,parsep=-0.5mm}
+%\setlist[myitemize,1]{label=$\bullet$}
+%\setlist[myitemize,2]{label=$\circ$}
+
+% -- color definitions --
+\definecolor{llb}{rgb}{0.35,0.35,0.35}
+\definecolor{bl}{RGB}{173,216,230}
+
+% -- new commands --
 \newcommand{\highlight}[1]{\framecolorbox[\textwidth]{black}{bl}{\makebox[\textwidth][l]{\bfseries \color{black} #1}}}
-\newcommand{\mystyle}[1]{\textit{\textbf{\textcolor{llb}{#1}}}}
-\newcommand{\guide}[1]{\textit{\textcolor{llb}{#1}}}
-%-------------------------------------------------------------------------
+\newcommand{\mystyle}[1]{\textit{\textit{\textcolor{llb}{#1}}}}
+\newcommand{\guide}[1]{\textit{\textit{\textcolor{llb}{#1}}}}
+\NewDocumentCommand{\framecolorbox}{oommm}{
+% #1 = width (optional)
+% #2 = inner alignment (optional)
+% #3 = frame color
+% #4 = background color
+% #5 = text
+\IfValueTF{#1}
+{\IfValueTF{#2}{\fcolorbox{#3}{#4}{\makebox[#1][#2]{#5}}}{\fcolorbox{#3}{#4}{\makebox[#1]{#5}}}}
+{\fcolorbox{#3}{#4}{#5}}
+}
 
-
+% -- document begins here --
 \begin{document}
+%\fontfamily{lmr}
+%\fontfamily{qcs}
+%\fontfamily{cmss}
+%\fontfamily{phv}
 
-%--------------------------------------------------------------------------
+	% -- for grades --
+	\vspace*{155pt}
+	%\vspace*{124pt}
 
-\vspace*{155pt}    % EARLIER
-%\vspace*{124pt}    
+	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} SCHOLASTIC ACHIEVEMENTS}}
+	\highlight{SCHOLASTIC ACHIEVEMENTS}
+	\begin{myitemize}[leftmargin=0.4cm]
+		\item \textbf{99.68} percentile in \textbf{GATE} in Electronics and Communication among \textbf{1,52,318} candidates \hfill{(\textit{2016})}\\[-0.6cm]
+		\item Secured an all India rank of \textbf{7578} in \textbf{AIEEE} \hfill{(\textit{2012})}\\[-0.6cm]
+		\item \bm{$3^{rd}$} runner up in \textbf{national level} abacus competition by SIP-INDIA \hfill{(\textit{2008})}
+	\end{myitemize}
 
-%-----------------------------------------------------------------------
-%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} SCHOLASTIC ACHIEVEMENTS}}
-\highlight{SCHOLASTIC ACHIEVEMENTS}
-\begin{itemize}[leftmargin=0.4cm]
-	\item \textbf{99.68} percentile in \textbf{GATE} in Electronics and Communication among \textbf{1,52,318} candidates \hfill{(\textit{2016})}\\[-0.6cm]
-	\item Secured All India rank of \textbf{7578} among \textbf{11.87 Lakh} students in \textbf{AIEEE} \hfill{(\textit{2012})}\\[-0.6cm]
-	\item Was \bm{$3^{rd}$} runner up in \textbf{national level} abacus competition by SIP-INDIA \hfill{(\textit{2008})}
-\end{itemize}
+	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} MAJOR PROJECTS}}----
+	\highlight{MAJOR PROJECTS AND SEMINAR}
+	\begin{myitemize}[leftmargin=0.4cm]
+	\item \textbf{M.Tech Project: OpenFlow Router with eBPF Forwarding Engine}
+	\hfill{(\textit{May'19 - Present})} \\
+	\guide{Guide: Prof. D. Manjunath, IIT Bombay}
+		\begin{myitemize}
+			\item The Goal is to use SDN framework, and create a fast forwarding engine.
+			\item The Forwarding Engine would be ported to a SPARC based FPGA, synthesised using AHIR tool
+		\end{myitemize}
 
-%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} MAJOR PROJECTS}}----
+	\item \textbf{Seminar: Open Source Router}
+	\hfill{(\textit{Jul'18 - Dec'18})}\\
+	\guide{Guide: Prof. D. Manjunath, IIT Bombay}
+		\begin{myitemize}
+			\item Understood SDN
+			\item Read about Click Modular Router, Extended Berkely Packet Filter, Network Processor Architecture
+			\item Implemented Click Modular Router.
+		\end{myitemize}
 
-\highlight{MAJOR PROJECTS}
+	\end{myitemize}
 
-\begin{itemize}[leftmargin=0.4cm]
-\item \textbf{M.Tech Project: OpenFlow Router with eBPF Forwarding Engine}
-\hfill{(\textit{May'18 - Present})} \\
-\guide{Guide: Prof. D. Manjunath, Electrical Engineering, IIT Bombay}\\[-0.6cm]
-\begin{itemize}
-\item The Goal is to use SDN framework, and create a fast forwarding engine.
-\item The Forwarding Engine would be ported to a SPARC based FPGA, synthesised using AHIR tool
-\end{itemize}
+	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black}  WORK EXPERIENCE}}
+	\highlight{WORK EXPERIENCE}
+	\begin{myitemize}
+		\item \textbf{Software Developer} \textpipe\ \mystyle{Nykaa} \hfill{(\textit{Jun'16 - Jul'17})}
+		\begin{myitemize}
+			\item \textbf{Responsibilities:} Involved in development of product listing, search, and checkout domains of the website.
+			\item Closely worked with Marketing team to strategically place tracking tags at numerous locations of the website.
+			\item \textbf{Softwares used:} HTML, Javascript, jQuery, Magento Framework, PHP
+		\end{myitemize}
 
-\item\textbf{B.Tech Project: Obstacle Detection at Unmanned Railway Crossing \\Using Image Processing}
-\hfill{(\textit{Jul'13 - Apr'14})}\\
-\guide{Guide: Prof. V. R. Satpute, Electronics $\&$ Communication Engineering, VNIT Nagpur}\\[-0.6cm]
-\begin{itemize}
-	\item Created own dataset for input.
-	\item Used basic image processing techniques, and morphological operations to extract moving obstacles at railway crossing
-\end{itemize}
+		\item \textbf{Teaching Assistant: Communication Networks} \textpipe\ \mystyle{IIT Bombay, IIT Dharwad} \hfill{(\textit{Jan'19 - Apr'19})}
+		\begin{myitemize}
+			\item Assisted Prof. D. Manjunath in creation and evaluation of Lab Experiments involving socket programming.
+			\item Work involved Traveling, Setting up Lab Experiments and evaluations at IIT Dharward.
+		\end{myitemize}
 
-\end{itemize}
+		\item \textbf{System Administrator} \textpipe\ \mystyle{Electrical Department, IIT Bombay} \hfill{(\textit{Jul'17 - Present})}
+		\begin{myitemize}
+			\item Development of EE department website, Dashboard, and maintaining numerous portals like faculty search committee, meeting room booking system, faculty wiki pages and TA allotment portals.
+			\item Provide mail service, storage space, computing and network facilities to the Department.
+			\item \textbf{Automation} of admission process through web based services and \textbf{Bash Scripts}
+		\end{myitemize}
+	\end{myitemize}
 
-%------------------------------------------------------------
-%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black}  WORK EXPERIENCE}}
-\highlight{WORK EXPERIENCE}
-\begin{itemize}
-	\item \textbf{Software Developer} \textpipe  \hspace{0.05cm} \mystyle{Nykaa} \hfill{(\textit{Jun'16 - Jul'17})}\\[-0.6cm]
-	\begin{itemize}
-		\item \textbf{Roles and Responsibilities:} Involved in development of Product listing, Search, and Checkout verticles of the website.
-		\item Closely worked with Marketing team to embed  tracking tags at numerous locations within the website.
-		\item \textbf{Softwares used:} Magento framework, PHP, Javascript, jQuery, HTML
-	\end{itemize}
-	
-	\item \textbf{Teaching Assistant: Communication Networks} \textpipe \hspace{0.05cm} \mystyle{IIT Bombay, IIT Dharwad} \hfill{(\textit{Jan'19 - Apr'19})}\\[-0.6cm]
-	\begin{itemize}
-		\item Assisted Prof. D. Manjunath in creation and evaluation of Lab Experiments involving socket programming.
-		\item Work involved Traveling, Setting up Lab Experiments and evaluations at IIT Dharward.
-	\end{itemize}
-	
-	
-	\item \textbf{System Administrator} \textpipe \hspace{0.05cm} \mystyle{PC Lab, Electrical Department, IIT Bombay} \hfill{(\textit{Jul'17 - Present})}\\[-0.6cm]
-	\begin{itemize}
-		\item Development of EE department website, Dashboard, and maintaining numerous portals like faculty search committee, meeting room booking system, faculty wiki pages and TA allotment portals.
-		\item Provide mail service, storage space, computing and network facilities to the Department.
-		\item \textbf{Automation} of admission process through web based services and \textbf{Bash Scripts}
-	\end{itemize}
-	
-\end{itemize}
-%----------------------------------------------------------------------
+	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} KEY COURSE PROJECTS AND SEMINAR}}
+	\highlight{KEY COURSE PROJECTS AND SEMINAR}
+	\begin{myitemize}
+		\item \textbf{Simulation of Cellular system in MATLAB}
+		\hfill{(\textit{Jan'18 - Apr'18})}\\
+		\guide{Instructor: Prof. Abhay Karandikar, IIT Bombay}
+		\begin{myitemize}
+			\item Computed \textbf{SIR, blocking probability} for different cluster sizes and \textbf{sectoring}. Analyzed \textbf{handover} process and \textbf{ping-pong} rate for different user mobilities and hysteresis values.
+			\item Analyzed BER performance for \textbf{space and time diversity} in a slow, flat fading Rayleigh channel.
+			\item Analyzed BER performance for a \textbf{single-cell} and \textbf{multi-cell} scenario in a \textbf{CDMA} cellular system.
+		\end{myitemize}
 
-%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} KEY COURSE PROJECTS AND SEMINAR}}
-\highlight{KEY COURSE PROJECTS AND SEMINAR}
+		\item \textbf{Different Scheduling Schemes in LTE}
+		\hfill{(\textit{Jan'18 - Apr'18})}\\
+		\guide{Instructor: Prof. Abhay Karandikar, IIT Bombay}
+		\begin{myitemize}
+			\item Simulated channel aware schemes: Maximum Throughput \textbf{(MT)}, Proportional Fair \textbf{(PF)}, Throughput to Average \textbf{(TTA)} scheduling schemes in LTE Downlink.
+			\item Used Cell Throughput, Average user throughput, and Jain Fairness Index as metrics to compare the scheduling schemes.
+		\end{myitemize}
 
-\begin{itemize}
+		\item \textbf{Basic Image Editor}
+		\hfill{(\textit{Jul'18 - Nov'18})}\\
+		\guide{Instructor: Prof. Amit Sethi, IIT Bombay}
+		\begin{myitemize}
+			\item Developed a Web based, cross platform GUI to perform operations on images
+			\item Showcased Histogram Equalization, Log Transform, Gamma Correction, Blurring, Sharpening, Median filtering techniques in the application.
+			\item Implement full inverse filtering, truncated inverse, approximate wiener, and constrained least square filtering to deblur the input image
+		\end{myitemize}
 
-\item \textbf{Simulation of Cellular system in MATLAB}
-\hfill{(\textit{Jan'18 - Apr'18})}\\
-\guide{Instructor: Prof. Abhay Karandikar, IIT Bombay}\\[-0.6cm]
-	\begin{itemize}
-	\item Computed \textbf{SIR, blocking probability} for different cluster sizes and \textbf{sectoring}. Analyzed \textbf{handover} process and \textbf{ping-pong} rate for different user mobilities and hysteresis values.
-	\item Analyzed BER performance for \textbf{space and time diversity} in a slow, flat fading Rayleigh channel.
-	\item Analyzed BER performance for a \textbf{single-cell} and \textbf{multi-cell} scenario in a \textbf{CDMA} cellular system.
-    \end{itemize}
-    
-\item \textbf{Different Scheduling Schemes in LTE}
-\hfill{(\textit{Jan'18 - Apr'18})}\\
-\guide{Instructor: Prof. Abhay Karandikar, IIT Bombay}\\[-0.6cm]
-	\begin{itemize}
-	\item Simulated channel aware schemes: Maximum Throughput \textbf{(MT)}, Proportional Fair \textbf{(PF)}, Throughput to Average \textbf{(TTA)} scheduling schemes in LTE Downlink.
-	\item Used Cell Throughput, Average user throughput, and Jain Fairness Index as metrics to compare the scheduling schemes.
-    \end{itemize}
-	
-\item \textbf{Image Dehazing through Depth estimation}
-\hfill{(\textit{Jul'18 - Nov'18})}\\
-\guide{Instructor: Prof. Amit Sethi, IIT Bombay}\\[-0.6cm]
-\begin{itemize}
-		\item Estimated Depth of a scene, using Color Attenuation Prior \textbf{(CAP)} and Dark Channel Prior \textbf{(DPC)}.
-		\item Using the estimated depth, reconstructed a haze-free image based on atmosphere degradation model
-    \end{itemize}
+		\item \textbf{Image Dehazing through Depth estimation}
+		\hfill{(\textit{Jul'18 - Nov'18})}\\
+		\guide{Instructor: Prof. Amit Sethi, IIT Bombay}
+		\begin{myitemize}
+			\item Estimated Depth of a scene, using Color Attenuation Prior \textbf{(CAP)} and Dark Channel Prior \textbf{(DPC)}.
+			\item Using the estimated depth, reconstructed a haze-free image based on atmosphere degradation model
+		\end{myitemize}
 
-\item \textbf{Visualisation of DBSCAN Clustering Algorithm}
-\hfill{\textit{(Jan'18 - Apr'18)}}\\ 
-\guide{Instructor: Prof. Amit Sethi, IIT Bombay}\\[-0.6cm]
-    \begin{itemize}
-    \item Implemented DBSCAN algorithm in python from scratch.
-    \item Utilised the implementation as a backend process for a web based GUI, which clusters data points and labels them, each cluster having a different hue.
-    \end{itemize}
-    
-\item \textbf{Seminar: Open Source Router}
-\hfill{(\textit{Jan'17 - Apr'17})}\\
-\guide{Instructor: Prof. D. Manjunath, IIT Bombay}\\[-0.6cm]
-	\begin{itemize}
-	\item Understood SDN
-	\item Read about Click Modular Router, Extended Berkely Packet Filter, Network Processor Architecture
-	\item Implemented Click Modular Router.
-	\end{itemize}
-\end{itemize}
+		\item \textbf{House sale status classification}
+		\hfill{\textit{(Jan'18 - Apr'18)}}\\
+		\guide{Instructor: Prof. Amit Sethi, IIT Bombay}
+		\begin{myitemize}
+			\item Based on the input attributes, classified house sale status
+			\item Used Random Forest, Support Vector Machine (SVM), Perceptron, Gaussian Naive Bayes Algorithm, and K-Nearest Neighbour Algorithm classification models
+			\item Grid Search, and Cross validation were done, for a subset of hyper parameters for each model, to increase cross validation accuracy
+		\end{myitemize}
 
-%----------------------------------------------------------------------------------
-%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} TECHNICAL SKILLS}}
-\highlight{KEY COURSE PROJECTS AND SEMINAR}
-\begin{tabular}{m{1in}m{0.20in}m{4.5in}}
-	\\[-3mm]
-	\textbf{Languages} &: & {{C, C++, Bash Scripting, HTML, Javascript, jQuery, PHP, Python}} \\
-	\\[-3.5mm]
-	\textbf{Tools} &: & {Matlab, GNU Radio, \LaTeX, Git, Wireshark}\\
-	\\[-3.5mm]
-	\textbf{Frameworks} &: & {Magento, CodeIgniter}\\
-	\\[-4mm]
-\end{tabular}\\
+		\item \textbf{Implementation of DBSCAN Algorithm from scratch}
+		\hfill{\textit{(Jan'18 - Apr'18)}}\\
+		\guide{Instructor: Prof. Amit Sethi, IIT Bombay}
+		\begin{myitemize}
+			\item Developed a program in python which will take a csv as input and give labels of each datapoint as output, depending on the hyperparameters that are set.
+			\item Utilised the implementation as a backend process for a web based GUI, which clusters data points and labels them, each cluster having a different color.
+		\end{myitemize}
 
-%-------------------------------------------------------------------------------------------
+		\item\textbf{B.Tech Project: Obstacle Detection at Unmanned Railway Crossing \\Using Image Processing}
+		\hfill{(\textit{Jul'13 - Apr'14})}\\
+		\guide{Guide: Prof. V. R. Satpute, Electronics and Communication Engineering, VNIT Nagpur}
+		\begin{myitemize}
+			\item Created own dataset for input.
+			\item Used basic image processing techniques, and morphological operations to extract moving obstacles at railway crossing
+		\end{myitemize}
+	\end{myitemize}
+
+	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} TECHNICAL SKILLS}}
+	\highlight{KEY COURSE PROJECTS AND SEMINAR}
+	\begin{tabular}{m{1in}m{0.20in}m{4.5in}}
+		\\[-3mm]
+		\textbf{Languages} &: & {{C, C++, Bash Scripting, HTML, Javascript, jQuery, PHP, Python}} \\
+		\\[-3.5mm]
+		\textbf{Tools} &: & {Matlab, GNU Radio, \LaTeX, Git, Wireshark}\\
+		\\[-3.5mm]
+		\textbf{Frameworks} &: & {Magento, CodeIgniter}\\
+		\\[-4mm]
+	\end{tabular}
+
 	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} RELEVANT COURSES}}
 	\highlight{RELEVANT COURSES}\\[0.2cm]
 	\begin{tabular}{ l l l }
 		\textbullet\ Digital Message Transmission &  \textbullet\ DSP and its Applications & \textbullet\ Introduction to Machine Learning\vspace{0.04cm}\\
 		\textbullet\ Wireless and Mobile Communications & \textbullet\ Image Processing & \textbullet\ Applied Linear Algebra\vspace{0.04cm}\\
-		\textbullet\ Information Theory and Coding & \textbullet\ Statistical Signal Analysis  & \textbullet\ Communication Networks\\ 
+		\textbullet\ Information Theory and Coding & \textbullet\ Statistical Signal Analysis  & \textbullet\ Communication Networks\\
 	\end{tabular}
-	\setlength{\tabcolsep}{0.2cm}	
+	\setlength{\tabcolsep}{0.2cm}
 	\vspace{0.15cm}
-	
-%-------------------------------------------------------------------------------------------
-%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} POSITIONS OF RESPONSIBILITY}}
-\highlight{POSITIONS OF RESPONSIBILITY}
-\begin{itemize}[leftmargin=0.4cm]
-\item \textbf {Web Secretary \textpipe \hspace{0.05cm} \mystyle{Hostel 1, IIT Bombay}} 
-\hfill{(\textit{Jul'17 - Jun'18})}\\[-0.6cm]
-    \begin{itemize}
-	\item Development and Maintenance of Hostel 1 Web site, and Computers.
-	\end{itemize}
-\item \textbf{Student Companion \textpipe \hspace{0.05cm} \mystyle{Institute Student Companion Program, IIT Bombay}}
-\hfill{(\textit{Jul'18 - Jun'19})}\\[-0.6cm]
-    \begin{itemize}
-			\item \textbf{Mentored} 7 M.Tech students by providing continuous help and support throughout the year\vspace{-0.1cm}
-            \item Played a key role in Department orientation, which included course registrations, informal sessions and lab visits for
-PG and PhD freshmen in \textit{Communication Engineering} specialisation.
-		\end{itemize}
-\item \textbf{PG Bridge Course Overall Coordinator \textpipe \hspace{0.05cm} \mystyle{Electrical Department, IIT Bombay}}
-\hfill{(\textit{Jul'18})}\\[-0.6cm]
-    \begin{itemize}
-            \item Organised a week long program for the \textbf{academic upliftment} of PG freshers.\vspace{-0.1cm}
-            \item Executed the program effectively in \textbf{parallel to regular academics} for more than \textbf{100} students.
-		\end{itemize}
-\item \textbf{Web Nominee \textpipe \hspace{0.05cm} \mystyle{PGAC IIT Bombay}}
-\hfill{(\textit{Jul'18 - Jun'19})}\\[-0.6cm]
-\item \textbf{Web Coordinator \textpipe \hspace{0.05cm} \mystyle{Students' Reading Group, Electrical Department, IIT Bombay}} \hfill{(\textit{Jul'18 - Jun'19})}
-\end{itemize}
 
-%---------------------------------------------------------------------------------
-%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} OTHER ACTIVITES \& INTERESTS}}
-\highlight{OTHER ACTIVITES \& INTERESTS}
-\begin{itemize}[leftmargin=0.4cm]
-    \item \textbf{Volunteered} for \textbf{Python} workshop by PGAC, IIT Bombay \hfill{(\textit{Oct'18})}\\[-0.6cm]
-        \item \textbf{Volunteered} for \textbf{Linux} workshop for Electrical Department PG Bridgecourse, IIT Bombay \hfill{(\textit{Jul'19})}\\[-0.6cm]
-    \item \textbf{Hobbies}: Watching TV series, solving puzzles, chess, snooker
+	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} POSITIONS OF RESPONSIBILITY}}
+	\highlight{POSITIONS OF RESPONSIBILITY}
+	\begin{myitemize}
+		\item \textbf {Web Secretary} \textpipe\ \mystyle{Hostel 1, IIT Bombay}
+		\hfill{(\textit{Jul'17 - Jun'18})}
+		\begin{myitemize}
+			\item Development and Maintenance of Hostel 1 Web site, and Computers.
+		\end{myitemize}
 
-    
-\end{itemize}
+		\item \textbf{Student Companion} \textpipe\ \mystyle{Institute Student Companion Program, IIT Bombay}
+		\hfill{(\textit{Jul'18 - Jun'19})}
+		\begin{myitemize}
+			\item \textbf{Mentored} 7 M.Tech students by providing continuous help and support throughout the year
+			\item Played a key role in Department orientation, which included course registrations, informal sessions and lab visits for PG and PhD freshmen in \textit{Communication Engineering} specialisation.
+		\end{myitemize}
 
-%-------------------------------------------------------------------------------------------------
+		\item \textbf{PG Bridge Course Overall Coordinator} \textpipe\ \mystyle{Electrical Department, IIT Bombay}
+		\hfill{(\textit{Jul'18})}
+		\begin{myitemize}
+			\item Organised a week long program for the \textbf{academic upliftment} of PG freshers.
+			\item Executed the program effectively in \textbf{parallel to regular academics} for more than \textbf{100} students.
+		\end{myitemize}
 
+		\item \textbf{Web Nominee} \textpipe\ \mystyle{Post Graduate Academic Council, IIT Bombay}
+		\hfill{(\textit{Jul'18 - Jun'19})}
 
+		\item \textbf{Web Coordinator} \textpipe\ \mystyle{Students' Reading Group, Electrical Department, IIT Bombay} \hfill{(\textit{Jul'18 - Jun'19})}
+	\end{myitemize}
+
+	%\colorbox{bl}{\makebox[\textwidth][l]{\bfseries \color{black} OTHER ACTIVITES \& INTERESTS}}
+	\highlight{OTHER ACTIVITES \& INTERESTS}
+	\begin{myitemize}
+		\item \textbf{Volunteered} for \textbf{Python} workshop by PGAC, IIT Bombay \hfill{(\textit{Oct'18})}
+		\item \textbf{Volunteered} for \textbf{Linux} workshop for Electrical Department PG Bridgecourse, IIT Bombay \hfill{(\textit{Jul'19})}
+		\item \textbf{Hobbies}: Watching TV series, solving puzzles, chess, snooker
+	\end{myitemize}
 
 \end{document}
