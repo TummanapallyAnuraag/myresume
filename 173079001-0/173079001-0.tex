@@ -1,0 +1,158 @@
+\documentclass[10pt]{article}
+
+% -- packages --
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage[a4paper]{geometry}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage{array}
+\usepackage{amsmath,latexsym}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{tipa}
+\usepackage{enumitem}
+\usepackage[pdftex]{graphicx}
+\usepackage{xparse}
+
+% -- formatting --
+\pagestyle{empty}
+\geometry{left=0.65in, right=0.57in, top=0.70in, bottom=0.5in}
+\renewcommand*\familydefault{\sfdefault}
+\setlength{\parindent}{-2mm}
+\setlength{\tabcolsep}{5pt}
+\setitemize[0]{leftmargin=0.4cm, itemsep=0.1cm}
+
+% -- new list definition -- # very useful!
+\newlist{myitemize}{itemize}{2}
+\setlist[myitemize,1]{label=$\bullet$,leftmargin=4mm,topsep=2mm,itemsep=2mm,itemindent=0mm,parsep=-0.5mm}
+\setlist[myitemize,2]{label=$\circ$,leftmargin=4mm,topsep=1mm,itemsep=1mm,itemindent=0mm,parsep=-0.5mm}
+%\setlist[myitemize,1]{label=$\bullet$}
+%\setlist[myitemize,2]{label=$\circ$}
+
+% -- color definitions --
+\definecolor{llb}{rgb}{0.35,0.35,0.35}
+\definecolor{bl}{RGB}{173,216,230}
+
+% -- new commands --
+\newcommand{\highlight}[1]{\framecolorbox[\textwidth]{black}{bl}{\makebox[\textwidth][l]{\bfseries \color{black} #1}}}
+\newcommand{\mystyle}[1]{\textit{\textit{\textcolor{llb}{#1}}}}
+\newcommand{\guide}[1]{\textit{\textit{\textcolor{llb}{#1}}}}
+\NewDocumentCommand{\framecolorbox}{oommm}{
+% #1 = width (optional)
+% #2 = inner alignment (optional)
+% #3 = frame color
+% #4 = background color
+% #5 = text
+\IfValueTF{#1}
+{\IfValueTF{#2}{\fcolorbox{#3}{#4}{\makebox[#1][#2]{#5}}}{\fcolorbox{#3}{#4}{\makebox[#1]{#5}}}}
+{\fcolorbox{#3}{#4}{#5}}
+}
+
+% -- document begins here --
+\begin{document}
+%\fontfamily{lmr}
+%\fontfamily{qcs}
+%\fontfamily{cmss}
+%\fontfamily{phv}
+
+	% -- for grades --
+	\vspace*{120pt}
+
+	\highlight{SCHOLASTIC ACHIEVEMENTS}
+	\begin{myitemize}[leftmargin=0.4cm]
+		\item \textbf{99.68} percentile in \textbf{GATE} in Electronics and Communication among \textbf{1,52,318} candidates \hfill{(\textit{2016})}\\[-0.6cm]
+		\item Secured an all India rank of \textbf{7578} in \textbf{AIEEE} \hfill{(\textit{2012})}\\[-0.6cm]
+		\item \bm{$3^{rd}$} runner up in \textbf{national level} abacus competition by SIP-INDIA \hfill{(\textit{2008})}
+	\end{myitemize}
+
+	\highlight{MAJOR PROJECTS AND SEMINAR}
+	\begin{myitemize}[leftmargin=0.4cm]
+	\item \textbf{M.Tech Project: OpenFlow Router with eBPF Forwarding Engine}
+	\hfill{(\textit{May'19 - Present})} \\
+	\guide{Guide: Prof. D. Manjunath, IIT Bombay}
+		\begin{myitemize}
+			\item Using POX controller to communicate with OpenVSwitch via \textbf{OpenFlow} protocol.
+			\item Using \textbf{eBPF} in kernel space as backend for fast packet forwarding, and less number of packet copies.
+			
+		\end{myitemize}
+
+	\item \textbf{Seminar: Open Source Router}
+	\hfill{(\textit{Jul'18 - Dec'18})}\\
+	\guide{Guide: Prof. D. Manjunath, IIT Bombay}
+		\begin{myitemize}
+			\item \textbf{Studied} Click Modular Router, Extended Berkely Packet Filter, Network Processor Architecture and Software Defined Networking (SDN) and \textbf{implemented
+		} a basic version of Click modular router, to work as an Ethernet switch.
+		\end{myitemize}
+
+	\end{myitemize}
+
+	\highlight{WORK EXPERIENCE}
+	\begin{myitemize}
+		\item \textbf{Software Developer} \textpipe\ \mystyle{Nykaa} \hfill{(\textit{Jun'16 - Jul'17})}
+		\begin{myitemize}
+			\item Involved in development of product listing, search, and checkout domains of the website.
+			\item Closely worked with Marketing team to strategically place tracking tags at numerous locations of the website.
+		\end{myitemize}
+
+		\item \textbf{Teaching Assistant: Communication Networks} \textpipe\ \mystyle{IIT Bombay, IIT Dharwad} \hfill{(\textit{Jan'19 - Apr'19})}
+		\begin{myitemize}
+			\item Created and evaluated \textbf{7} lab experiments, based on \textbf{socket programming}.
+			\item Work also involved \textbf{traveling}, setting up lab experiments and evaluations at \textbf{IIT Dharward}.
+		\end{myitemize}
+
+		\item \textbf{System Administrator} \textpipe\ \mystyle{Electrical Department, IIT Bombay} \hfill{(\textit{Jul'17 - Present})}
+		\begin{myitemize}
+			\item Development of EE department website, Dashboard, and maintaining numerous portals.
+			\item \textbf{Automation} of admission process through web based services and \textbf{Bash Scripts}
+		\end{myitemize}
+	\end{myitemize}
+
+	\highlight{KEY COURSE PROJECTS AND SEMINAR}
+	\begin{myitemize}
+		\item Simulation of \textbf{Cellular system} in MATLAB \textpipe\ \mystyle{Wireless and Mobile Communications}
+		\hfill{(\textit{Jan'18 - Apr'18})}
+
+		\item Different Scheduling Schemes in \textbf{LTE} \textpipe\ \mystyle{Wireless and Mobile Communications}
+		\hfill{(\textit{Jan'18 - Apr'18})}
+
+		\item Basic \textbf{Image Editor} \textpipe\ \mystyle{Image Processing}
+		\hfill{(\textit{Jul'18 - Nov'18})}
+
+		\item Image \textbf{Dehazing} through Depth estimation \textpipe\ \mystyle{Image Processing}
+		\hfill{(\textit{Jul'18 - Nov'18})}
+
+		\item House sale status \textbf{classification} \textpipe\ \mystyle{Introduction to Machine Learning}
+		\hfill{\textit{(Jan'18 - Apr'18)}}
+
+		\item Implementation of \textbf{DBSCAN} Algorithm from scratch \textpipe\ \mystyle{Introduction to Machine Learning}
+		\hfill{\textit{(Jan'18 - Apr'18)}}
+	\end{myitemize}
+
+	\highlight{KEY COURSE PROJECTS AND SEMINAR}
+	\begin{tabular}{m{1in}m{0.20in}m{4.5in}}
+		\\[-3mm]
+		\textbf{Languages} &: & {{C, C++, Bash Scripting, HTML, Javascript, jQuery, PHP, Python}} \\
+		\\[-3.5mm]
+		\textbf{Tools} &: & {Matlab, GNU Radio, \LaTeX, Git, Wireshark}\\
+		\\[-4mm]
+	\end{tabular}
+
+	\highlight{RELEVANT COURSES}\\[0.2cm]
+	\begin{tabular}{ l l l }
+		\textbullet\ Digital Message Transmission &  \textbullet\ DSP and its Applications & \textbullet\ Introduction to Machine Learning\vspace{0.04cm}\\
+		\textbullet\ Wireless and Mobile Communications & \textbullet\ Image Processing & \textbullet\ Applied Linear Algebra\vspace{0.04cm}\\
+		\textbullet\ Information Theory and Coding & \textbullet\ Statistical Signal Analysis  & \textbullet\ Communication Networks\\
+	\end{tabular}
+	\setlength{\tabcolsep}{0.2cm}
+	\vspace{0.15cm}
+
+	\highlight{OTHER ACTIVITES \& INTERESTS}
+	\begin{myitemize}
+		\item \textbf{Volunteered} for \textbf{Python} workshop by PGAC, IIT Bombay \hfill{(\textit{Oct'18})}
+		\item \textbf{Volunteered} for \textbf{Linux} workshop for Electrical Department PG Bridgecourse, IIT Bombay \hfill{(\textit{Jul'19})}
+		\item \textbf{Hobbies}: Watching TV series, solving puzzles, chess, snooker
+	\end{myitemize}
+
+\end{document}
