@@ -13,19 +13,20 @@
 | guide color		|   black	|   gray	|   black	|   gray	|   None	|
 | Link			|   [R0][2]	|   [R1][3]	|   [R2][4]	|   [R3][5]	|   [R4][6]	|
 | Proofs		|   [R0][7]	|   [R1][8]	|   [R2][9]	|   [R3][10]	|   [R4][11]	|
-|OnePageResume		|		|		|		|		|		|
-|TwoPageResume		|               |               |               |               |               |
-|ScholasticAchievements	|               |               |               |               |               |
-|MTP			|               |               |               |               |               |
-|Seminar		|               |               |               |               |               |
-|WorkEx			|               |               |               |               |               |
-|TAWork			|               |               |               |               |               |
-|SysAdWork		|               |               |               |               |               |
-|CourseProjects		|               |               |               |               |               |
-|TechnicalSkills	|               |               |               |               |               |
-|RelevantCourses	|               |               |               |               |               |
-|PoRs			|               |               |               |               |               |
-|OtherActivities..	|               |               |               |               |               |
+|                       |               |               |               |               |               |
+|OnePageResume		|	1	|		|		|	1	|		|
+|TwoPageResume		|               |       1       |       1       |               |      1        |
+|ScholasticAchievements	|        1      |       1       |       1       |        1      |       1       |
+|MTP			|        1      |        1      |       1       |        1      |       1       |
+|Seminar		|        1      |         1     |       1       |        1      |        1      |
+|WorkEx			|        1      |        1      |       1       |       1       |       1       |
+|TAWork			|       1       |        1      |       1       |       1       |       1       |
+|SysAdWork		|        1      |        1      |       1       |       1       |      1        |
+|CourseProjects		|        1      |       1       |       1       |       1       |      1        |
+|TechnicalSkills	|        1      |      1        |       1       |       1       |      1        |
+|RelevantCourses	|               |      1        |       1       |               |      1        |
+|PoRs			|               |      1        |       1       |      1        |      1        |
+|OtherActivities..	|        1      |       1       |       1       |               |      1        |
 
 
 
