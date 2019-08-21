@@ -5,11 +5,11 @@
 
 ## Resumes
 
-		| Resume 0	| Resume 1 	| Resume 2	| Resume 3	| Resume 4
-----------------|---------------|---------------|---------------|---------------|--------------
-Attributes	| 1-Page	| 2-Page	| 2-Page	| 1/2 Page	| 1/2 Page
-Tech/NonTech	| -		| Tech		| Non-Tech	| Tech		| Non-Tech
-Link		| [R0][2]	| [R1][3]	| [R2][4]	| [R3][5]	| [R4][6]
+|		| Resume 0	| Resume 1 	| Resume 2	| Resume 3	| Resume 4	|
+|---------------|---------------|---------------|---------------|---------------|---------------|
+| Attributes	|   1-Page	|   2-Page	|   2-Page	|   1/2 Page	|   1/2 Page	|
+| Tech/NonTech	|   None	|   Tech	|   Non-Tech	|   Tech	|   Non-Tech	|
+| Link		|   [R0][2]	|   [R1][3]	|   [R2][4]	|   [R3][5]	|   [R4][6]	|
 
 
 
