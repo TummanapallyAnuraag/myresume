@@ -10,10 +10,9 @@
 | Attributes	|   1-Page	|   2-Page	|   2-Page	|   1/2 Page	|   1/2 Page	|
 | PageCount	|   1		|   2		|   2		|   1		|   		|
 | Tech/NonTech	|   None	|   Tech	|   Non-Tech	|   Tech	|   Non-Tech	|
-| Link		|   [R0][2]	|   [R1][3]	|   [R2][4]	|   [R3][5]	|   [R4][6]	|
 | guide color	|   black	|   gray	|   black	|   gray	|   None	|
-
-
+| Link		|   [R0][2]	|   [R1][3]	|   [R2][4]	|   [R3][5]	|   [R4][6]	|
+| Proofs	|   [R0][7]	|   [R1][8]	|   [R2][9]	|   [R3][10]	|   [R4][11]	|
 
 
 
@@ -31,3 +30,8 @@
 [4]: 173079001-2/build/173079001-2.pdf
 [5]: 173079001-3/build/173079001-3.pdf
 [6]: 173079001-4/build/173079001-4.pdf
+[7]: 173079001-0/verifications/build/173079001_0.pdf
+[8]: 173079001-1/verifications/build/173079001_1.pdf
+[9]: 173079001-2/verifications/build/173079001_2.pdf
+[10]: 173079001-3/verifications/build/173079001_3.pdf
+[11]: 173079001-4/verifications/build/173079001_4.pdf
