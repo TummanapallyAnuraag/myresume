@@ -5,16 +5,19 @@
 \contentsline {section}{\numberline {2}Major Projects and Seminar}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}E-Mail from Guide}{5}{subsection.2.1}
 \contentsline {section}{\numberline {3}Work Experience}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}E-Mail from Instructor}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}E-Mail from Lab Incharge}{7}{subsection.3.2}
-\contentsline {section}{\numberline {4}Key Course Projects}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Verified By DPC}{8}{subsection.4.1}
-\contentsline {section}{\numberline {5}Positions of Responsibility}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}E-Mail from Hostel 1 Gen. Secy}{9}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}E-Mail from current OC, Bridgecourse}{11}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}E-Mail from Faculty Coordinator, ISCP}{12}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}E-Mail from PGAC Gen. Secy}{13}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}E-Mail from OC, SRG EE IITB}{14}{subsection.5.5}
-\contentsline {section}{\numberline {6}Other Activities \& Interests}{15}{section.6}
-\contentsline {subsection}{\numberline {6.1}Certificate from PGAC, IITB}{15}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}E-Mail from current OC, Bridgecourse}{16}{subsection.6.2}
+\contentsline {subsection}{\numberline {3.1}E-Mail from Past Employer}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}E-Mail from Instructor}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}E-Mail from Lab Incharge}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Key Course Projects}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Verified By DPC}{9}{subsection.4.1}
+\contentsline {section}{\numberline {5}Relevant Courses}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}ASC Registration Status}{11}{subsection.5.1}
+\contentsline {section}{\numberline {6}Positions of Responsibility}{12}{section.6}
+\contentsline {subsection}{\numberline {6.1}E-Mail from Hostel 1 Gen. Secy}{12}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}E-Mail from current OC, Bridgecourse}{14}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}E-Mail from Overall Coordinator, ISCP}{15}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}E-Mail from PGAC Gen. Secy}{20}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}E-Mail from OC, SRG EE IITB}{21}{subsection.6.5}
+\contentsline {section}{\numberline {7}Other Activities \& Interests}{22}{section.7}
+\contentsline {subsection}{\numberline {7.1}Certificate from PGAC, IITB}{22}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}E-Mail from current OC, Bridgecourse}{23}{subsection.7.2}
