@@ -1,15 +1,17 @@
 # myresume
 
 ## Timeline
-- Initial Draft on `30 July2019` - [commit: single & double page resumes][1]
+- Initial Draft on `30 July 2019` - [commit: single & double page resumes][1]
 
 ## Resumes
 
 |		| Resume 0	| Resume 1 	| Resume 2	| Resume 3	| Resume 4	|
 |---------------|---------------|---------------|---------------|---------------|---------------|
 | Attributes	|   1-Page	|   2-Page	|   2-Page	|   1/2 Page	|   1/2 Page	|
+| PageCount	|   1		|   2		|   2		|   1		|   		|
 | Tech/NonTech	|   None	|   Tech	|   Non-Tech	|   Tech	|   Non-Tech	|
 | Link		|   [R0][2]	|   [R1][3]	|   [R2][4]	|   [R3][5]	|   [R4][6]	|
+| guide color	|   black	|   gray	|   black	|   gray	|   None	|
 
 
 
