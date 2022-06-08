@@ -1,0 +1,222 @@
+\documentclass[10pt]{article}
+
+% -- packages --
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage[a4paper]{geometry}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage{array}
+\usepackage{amsmath,latexsym}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{tipa}
+\usepackage{enumitem}
+\usepackage[pdftex]{graphicx}
+\usepackage{xparse}
+\usepackage{ctable} % for \specialrule command
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+
+% -- formatting --
+\pagestyle{empty}
+\geometry{left=0.65in, right=0.57in, top=0.70in, bottom=0.5in}
+\renewcommand*\familydefault{\sfdefault}
+\setlength{\parindent}{-2mm}
+\setlength{\tabcolsep}{5pt}
+\setitemize[0]{leftmargin=0.4cm, itemsep=0.1cm}
+\renewcommand*\familydefault{\sfdefault}
+
+% -- url style --
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+% -- new list definition -- # very useful!
+\newlist{myitemize}{itemize}{3}
+\setlist[myitemize,1]{label=$\bullet$,leftmargin=4mm,topsep=2mm,itemsep=2mm,itemindent=0mm,parsep=-0.5mm}
+\setlist[myitemize,2]{label=$\circ$,leftmargin=4mm,topsep=1mm,itemsep=1mm,itemindent=0mm,parsep=-0.5mm}
+\setlist[myitemize,3]{label=$-$,leftmargin=4mm,topsep=1mm,itemsep=1mm,itemindent=0mm,parsep=-0.5mm}
+%\setlist[myitemize,1]{label=$\bullet$}
+%\setlist[myitemize,2]{label=$\circ$}
+
+% -- color definitions --
+\definecolor{llb}{rgb}{0.15,0.15,0.15}
+\definecolor{bl}{RGB}{173,216,230}
+
+% -- new commands --
+\newcommand{\highlight}[1]{\framecolorbox[\textwidth]{black}{bl}{\makebox[\textwidth][l]{\bfseries \color{black} \uppercase{#1}}}}
+\newcommand{\mystyle}[1]{\textit{\textit{\textcolor{llb}{#1}}}}
+\newcommand{\guide}[1]{\textit{\textit{\textcolor{llb}{#1}}}}
+\NewDocumentCommand{\framecolorbox}{oommm}{
+% #1 = width (optional)
+% #2 = inner alignment (optional)
+% #3 = frame color
+% #4 = background color
+% #5 = text
+\IfValueTF{#1}
+{\IfValueTF{#2}{\fcolorbox{#3}{#4}{\makebox[#1][#2]{#5}}}{\fcolorbox{#3}{#4}{\makebox[#1]{#5}}}}
+{\fcolorbox{#3}{#4}{#5}}
+}
+
+% -- document begins here --
+\begin{document}
+%\fontfamily{lmr}
+%\fontfamily{qcs}
+%\fontfamily{cmss}
+%\fontfamily{phv}
+%\fontfamily{lmdh}
+%\fontfamily{ptm}
+
+	% -- for grades --
+	% \vspace*{120pt}
+	\begin{table}
+	    \begin{minipage}{0.15\linewidth}
+	        \centering
+	        \includegraphics[height =1in]{images/linkedin_pic.jpg}
+	    \end{minipage}
+	    \begin{minipage}{0.65\linewidth}
+	        \centering
+	        	\textbf{\huge{Anuraag Tummanapally}}\\
+	        \faIcon{linkedin} \href{https://www.linkedin.com/in/anuraag-tummanapally-aa73a4a6/}{anuraag-tummanapally-aa73a4a6}
+	        $\cdot$
+	        \faIcon{github} \href{https://github.com/TummanapallyAnuraag}{TummanapallyAnuraag}
+	        \\
+	        \faIcon{link} \href{https://www.ee.iitb.ac.in/~anuraagt/}{https://www.ee.iitb.ac.in/$\sim$anuraagt/}\\
+	        \faIcon{mobile-alt} \texttt{+91-8087982290}
+	        $\cdot$
+	        \faIcon{mobile-alt} \texttt{+91-8291429184}\\
+	        \faIcon{envelope} \href{mailto:tummanapally.anuraag@gmail.com}{tummanapally.anuraag@gmail.com}
+	    \end{minipage}\hfill
+	    \vspace{-1.5em}
+	\end{table}
+	
+	\begin{tabular}{llcc}
+		\hline
+		Examination &
+		Institute &
+		Year &
+		CPI/\%\\
+		\specialrule{.1em}{.05em}{.05em} 
+		M.Tech in Communications \& Signal Processing &
+		IIT Bombay &
+		2020 &
+		9.48 \\
+		
+		B.Tech in Electronics \& Communication Engineering &
+		NIT Nagpur &
+		2016 &
+		9.02 \\
+		
+		Intermediate (+2) MPC (BIE-AP) &
+		Narayana Junior College, KPHB &
+		2012 &
+		92.8 \\
+		
+		$10^{th}$ Class (CBSE) &
+		Bharatiya Vidya Bhavans Public School, BHEL &
+		2010 &
+		9.0 \\
+		
+		%\hline
+	\end{tabular}
+
+	\highlight{Summary}
+	\begin{myitemize}
+		\item[] Competent engineer with a constant drive to work on challenging and interesting problems, possessing excellent academic background. A team player who can turn out to be a great resource for the team.
+	\end{myitemize}		
+
+	\highlight{WORK EXPERIENCE}
+	\begin{myitemize}
+		\item \textbf{Senior Software Engineer} \textpipe\ \mystyle{Texas Instruments, Bengaluru} \hfill{(\textit{Jul'20 - Present})}
+		\begin{myitemize}
+			\item \textbf{Ownership} for \textbf{OTP Key writer} software for multiple SoCs
+			\item Worked on TI's security software for \textbf{Jacinto} and \textbf{Sitara} class of Processors
+				\begin{myitemize}
+					\item J721e, J7200, AM64x, AM62x
+				\end{myitemize}
+			\item Software lead and point of contact for \textbf{Security Audit}
+			\item Involved in \textbf{wakeup} of AM62x (system firmware team)
+			\item Worked on Embedded security software, driver configuration, software integration, unit/integration testing of software
+			\item Improved \textbf{documentation} for the software offering
+			\item Created a web based interactive tool/game to better illustrate concepts of \textbf{firewall in TIFS}
+		\end{myitemize}
+		
+		\item \textbf{System Administrator} \textpipe\ \mystyle{Electrical Department, IIT Bombay} \hfill{(\textit{Part Time: Jul'17 - Jun'20})}
+		\begin{myitemize}
+			\item \textbf{Development} of EE department website, Dashboard, and maintaining numerous portals like faculty search committee, meeting room booking system, faculty wiki pages, and TA allotment portals.
+			\item Provide mail service, storage space, computing, and network facilities to the Department.
+			\item \textbf{Automation} of admission process through web-based services and \textbf{Bash Scripts.}
+		\end{myitemize}
+		
+		\item \textbf{Teaching Assistant: Communication Networks} \textpipe\ \mystyle{IIT Bombay, IIT Dharwad} \hfill{(\textit{Part Time: Jan'19 - Apr'19})}
+		\begin{myitemize}
+			\item \textbf{Created} and evaluated \textbf{7} lab experiments, based on \textbf{socket programming}.
+			\item Work also involved \textbf{traveling}, setting up lab experiments and evaluations at \textbf{IIT Dharwad}.
+		\end{myitemize}
+		
+		
+		
+		\item \textbf{Software Developer} \textpipe\ \mystyle{Nykaa} \hfill{(\textit{Jun'16 - Jul'17})}
+		\begin{myitemize}
+			\item Involved in \textbf{development} of product listing, search, and checkout domains of the website.
+			\item Closely worked with marketing team to strategically place tracking tags at numerous locations of the website.
+		\end{myitemize}
+	\end{myitemize}
+
+	\highlight{OTHER PROJECTS}
+	\begin{myitemize}
+		\item OpenFlow Router with eBPF Forwarding Engine \textpipe\ \mystyle{M.Tech Project}
+		\hfill{(\textit{May'19 - Jun'20})}
+		
+		\item Open Source Router \textpipe\ \mystyle{M.Tech Seminar}
+		\hfill{(\textit{Jul'18 - Dec'18})}	
+	
+		\item Basic \textbf{Image Editor} \textpipe\ \mystyle{Image Processing}
+		\hfill{(\textit{Jul'18 - Nov'18})}
+
+		\item Image \textbf{Dehazing} through Depth estimation \textpipe\ \mystyle{Image Processing}
+		\hfill{(\textit{Jul'18 - Nov'18})}
+
+		\item House sale status \textbf{classification} \textpipe\ \mystyle{Introduction to Machine Learning}
+		\hfill{\textit{(Jan'18 - Apr'18)}}
+
+		\item Implementation of \textbf{DBSCAN} Algorithm from scratch \textpipe\ \mystyle{Introduction to Machine Learning}
+		\hfill{\textit{(Jan'18 - Apr'18)}}
+		
+		\item Simulation of \textbf{Cellular system} in MATLAB \textpipe\ \mystyle{Wireless and Mobile Communications}
+		\hfill{(\textit{Jan'18 - Apr'18})}
+
+		\item Different \textbf{Scheduling Schemes in LTE} \textpipe\ \mystyle{Wireless and Mobile Communications}
+		\hfill{(\textit{Jan'18 - Apr'18})}
+	\end{myitemize}
+
+	\highlight{TECHNICAL SKILLS}
+	\begin{tabular}{m{1in}m{0.20in}m{4.5in}}
+		\\[-3mm]
+		\textbf{Languages} &: & \texttt{{C, C++, Bash Scripting, HTML, Javascript, jQuery, PHP, Python}} \\
+		\\[-3.5mm]
+		\textbf{Tools} &: & \texttt{Matlab, GNU Radio, }\LaTeX \texttt{, Git, Wireshark, CCS, Lauterbach, Zebu, Qt, Teraterm, Bitbucket, Confluence}\\
+		\\[-4mm]
+	\end{tabular}
+
+	\highlight{LEADERSHIP}
+	\begin{myitemize}
+		\item Currently \textbf{mentoring an intern} for the team, at Texas Instruments
+		\item PG Bridge Course \textbf{Overall Coordinator}
+		\item Institute \textbf{Student Companion} (Mentored 7 M.Tech students)
+	\end{myitemize}
+
+	\highlight{Other Activities \& Interests}
+	\begin{myitemize}
+		\item \textbf{Won} cash prize at work in a contest to mimic \textbf{\href{https://www.nytimes.com/games/wordle/index.html}{wordle}} game with words from semiconductor industry
+		\item Took positions as web secretary for Hostel, PG Academic Council \& Student's reading group at IITB
+		\item \textbf{Volunteered} as instructor for \textbf{Python} and \textbf{Linux} workshops at IIT Bombay
+		\item \textbf{Hobbies}: Love solving puzzles, playing chess, snooker, and binge watching on OTT platforms
+	\end{myitemize}
+
+\end{document}
